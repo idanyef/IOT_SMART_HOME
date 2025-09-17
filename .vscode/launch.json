@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SmartParking Manager",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/manager_parking.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Gate Relay (gate-1)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/gate_relay_emulator.py",
+      "args": [
+        "1"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Parking Sensor (spot-1)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/parking_sensor_emulator.py",
+      "args": [
+        "1",
+        "3"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Payment Button (spot-1)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/payment_button_emulator.py",
+      "args": [
+        "1"
+      ],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "SmartParking GUI",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/gui_parking.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
